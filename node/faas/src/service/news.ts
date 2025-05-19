@@ -177,17 +177,17 @@ testRouter.post('/get-news-from-towards-science', async (req: Request, res: Resp
     try {
         res.send({
             code: 200,
-            msg: `以下是整理好的咨询信息，并已翻译为简体中文：
+            msg: `以下是整理好的资讯信息，并已翻译为简体中文：
 
-咨询1：Uh-Uh, Not Guilty
+资讯1：Uh-Uh, Not Guilty
 简介：暂无简介（未能成功获取内容）。
 原文链接：Uh-Uh, Not Guilty
 
-咨询2：Regression Discontinuity Design: How It Works and When to Use It
+资讯2：Regression Discontinuity Design: How It Works and When to Use It
 简介：从核心概念到实际分析——回归不连续设计（RDD）因果推断的工作原理、如何运行以及如何正确使用。
 原文链接：Regression Discontinuity Design
 
-由于技术原因，未能成功获取第一条咨询的详细内容。如果需要进一步帮助，请告诉我！`
+由于技术原因，未能成功获取第一条资讯的详细内容。如果需要进一步帮助，请告诉我！`
         });
     } catch (error) {
         res.send(error);
